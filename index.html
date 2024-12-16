@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulador de Comércio Exterior</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>Simulador de Comércio Exterior</h1>
+  </header>
+
+  <div class="container">
+    <form id="comercioForm">
+      <h2>Simule sua Importação/Exportação</h2>
+
+      <label for="valorProduto">Valor do Produto (R$):</label>
+      <input type="number" id="valorProduto" required>
+
+      <label for="impostoImportacao">Imposto de Importação (%):</label>
+      <input type="number" id="impostoImportacao" required>
+
+      <label for="frete">Custo do Frete (R$):</label>
+      <input type="number" id="frete" required>
+
+      <label for="outrosCustos">Outros Custos (R$):</label>
+      <input type="number" id="outrosCustos" required>
+
+      <button type="submit">Simular</button>
+    </form>
+
+    <div id="resultado">
+      <h3>Resultado da Simulação:</h3>
+      <p id="valorTotal"></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2024 Simulador de Comércio Exterior</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
